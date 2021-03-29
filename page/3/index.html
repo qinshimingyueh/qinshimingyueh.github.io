@@ -75,9 +75,9 @@
 			
 				<li><a href="/" target="_blank">主页</a></li>
 			
-				<li><a href="/null" target="_blank">技术笔记</a></li>
+				<li><a href="/tags/" target="_blank">随笔</a></li>
 			
-				<li><a href="/tags/%E9%9A%8F%E7%AC%94/" target="_blank">随笔</a></li>
+				<li><a href="/news/" target="_blank">在职学习网站</a></li>
 			
 			</ul>
 		</nav>
@@ -177,9 +177,9 @@
 				
 					<li style="width: 33.333333333333336%"><a href="/">主页</a></li>
 		        
-					<li style="width: 33.333333333333336%"><a href="/null">技术笔记</a></li>
+					<li style="width: 33.333333333333336%"><a href="/tags/">随笔</a></li>
 		        
-					<li style="width: 33.333333333333336%"><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
+					<li style="width: 33.333333333333336%"><a href="/news/">在职学习网站</a></li>
 		        
 				</ul>
 			</nav>
@@ -196,6 +196,123 @@
           </div>
           <div id="js-content" class="content-ll">
             
+
+  
+    <article id="post-Vuex-1" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+  
+  
+    <h1 itemprop="name">
+	
+	  <a class="article-title" href="/2020/06/02/Vuex-1/" target="_blank">Vuex</a>
+  
+    </h1>
+  
+
+
+  
+  
+<a href="/2020/06/02/Vuex-1/" class="archive-article-date">
+        <time datetime="2020-06-02T01:32:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-06-02</time>
+</a>
+
+  
+  
+    
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <h3 id="Vuex"><a href="#Vuex" class="headerlink" title="Vuex"></a>Vuex</h3><h5 id="vuex的概述"><a href="#vuex的概述" class="headerlink" title="vuex的概述"></a>vuex的概述</h5><p>是实现组件全局状态(数据)管理的一种机制,可以方便的实现组件之间数据的共享</p>
+<h5 id="使用vuex统一管理状态的好处"><a href="#使用vuex统一管理状态的好处" class="headerlink" title="使用vuex统一管理状态的好处"></a>使用vuex统一管理状态的好处</h5><p>能够在vuex中集中管理共享的数据,易于开发和后期维护</p>
+<p>能够高效地实现组件之间的数据共享,提高开发效率</p>
+<p>存储在vuex中的数据都是响应式的,能够实时保持数据与页面的同步</p>
+<h5 id="vuex的核心概念"><a href="#vuex的核心概念" class="headerlink" title="vuex的核心概念"></a>vuex的核心概念</h5><h6 id="State"><a href="#State" class="headerlink" title="State"></a>State</h6><pre><code>提供唯一的公共数据源,所有共享的数据都要统一放到Store 的State中进行存储
+
+第一种方式 组件访问State中数据的
+
+    通过this.$store.state.全局数据名称
+
+第二种方式 组件访问State中数据的
+
+    先按需导入mapState函数： import { mapState } from &apos;vuex&apos;
+
+    然后数据映射为计算属性： computed:{ ...mapState([&apos;全局数据名称&apos;]) }</code></pre>
+    
+    <a class="article-more-a" href="/2020/06/02/Vuex-1/#more">more >></a>
+    
+    
+
+    
+
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Vue</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">vuex使用</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+    
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/web前端//" class="article-tag-list-link color1">web前端</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+    
+    <p class="article-more-link">
+      <a class="article-more-a" href="/2020/06/02/Vuex-1/">展开全文 >></a>
+    </p>
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
 
   
     <article id="post-Tpora-1" class="article article-type-post  article-index" itemscope itemprop="blogPost">
@@ -559,19 +676,11 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">JS</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">Git使用</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">web前端</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">工具</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -583,15 +692,19 @@
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">工具</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">JS</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">面试整理</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">学历提升</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">vue3.0新特性</a>
+                <a href="javascript:void(0)" class="js-tag color2">windows10使用</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -599,11 +712,19 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">前端环境搭建</a>
+                <a href="javascript:void(0)" class="js-tag color5">学历提升</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">计算机操作系统</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">前端环境搭建</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">vue3.0新特性</a>
               </li>
              
               <li class="article-tag-list-item">
